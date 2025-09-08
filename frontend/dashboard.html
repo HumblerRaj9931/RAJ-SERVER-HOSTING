@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dashboard</h1>
 
+    <h3>Create New Bot</h3>
+    <input type="text" id="botName" placeholder="Service Name">
+    <input type="text" id="repoUrl" placeholder="GitHub Repo URL">
+    <input type="text" id="botToken" placeholder="BOT_TOKEN">
+    <button onclick="createBot()">Create Bot</button>
+
+    <h3>Service Logs</h3>
+    <input type="text" id="serviceId" placeholder="Enter Service ID">
+    <button onclick="getLogs()">Get Logs</button>
+    <pre id="logsOutput"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
